@@ -92,6 +92,7 @@ Mediterranean
 **📁 Repository Structure**
 
 Pizza_Sales_Analysis
+
 ├── pizza_sales.csv
 
 ├── queries.sql
