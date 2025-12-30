@@ -56,10 +56,11 @@ SQL queries were used to extract key metrics and uncover trends
 # 📊 Dashboard Creation (Excel)
 
 The results from SQL analysis were exported to Microsoft Excel to build an interactive dashboard using:
-KPI cards (Total Revenue, Total Orders, Average Order Value)
-Line charts for time-based sales trends
-Bar and donut charts for category and size analysis
-Slicers for filtering by date, category, and size
+
+KPI cards (Total Revenue, Total Orders, Average Order Value),
+Line charts for time-based sales trends,
+Bar and donut charts for category and size analysis,
+Slicers for filtering by date, category and size
 
 Dashboard Preview:
 https://github.com/mayank235-ai/Pizza_sales_analysis/blob/main/pizza_dashboad.png
@@ -67,19 +68,23 @@ https://github.com/mayank235-ai/Pizza_sales_analysis/blob/main/pizza_dashboad.pn
 **📈 Key Insights**
  
 *Sales Performance*
+
 Total Revenue: $817,860
 Highest sales on Fridays and Saturdays
 
 *Peak ordering hours*:
+
 Lunch: 12 PM – 1 PM
 Evening: 5 PM – 8 PM
 
 *Product Performance*
+
 Most ordered size: Large
 Top-selling pizza: Classic Deluxe Pizza
 Highest revenue category: Classic Pizzas
 
 *Low-Performing Products*
+
 Least ordered pizzas:
 Brie Carre
 Mediterranean
@@ -91,7 +96,7 @@ Pizza_Sales_Analysis
 ├── pizza_sales_dashboard.png
 └── README.md
 
-#🚀 Conclusion#
+**🚀 Conclusion**
 
 This project demonstrates practical experience in SQL querying, data cleaning, KPI analysis, and dashboard development. It reflects a complete, real-world data analytics workflow — converting raw data into clear insights that support business decision-making.
 
