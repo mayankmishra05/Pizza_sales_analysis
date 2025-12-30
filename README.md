@@ -35,7 +35,7 @@ The dataset contains detailed pizza order information, including:
 
 ## 🔄 Project Workflow
 
-### 🪜 Step 1: Data Import
+###  Step 1: Data Import
 The raw dataset was imported into **PostgreSQL**, and a table named `pizza_sales` was created with the following columns: order_id, pizza_id, pizza_name_id, quantity,
 order_date, order_time, unit_price, total_price
 
@@ -90,10 +90,14 @@ Brie Carre
 Mediterranean
 
 **📁 Repository Structure**
+
 Pizza_Sales_Analysis
 ├── pizza_sales.csv
+
 ├── queries.sql
+
 ├── pizza_sales_dashboard.png
+
 └── README.md
 
 **🚀 Conclusion**
