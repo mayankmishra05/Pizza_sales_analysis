@@ -64,30 +64,34 @@ Slicers for filtering by date, category, and size
 Dashboard Preview:
 https://github.com/mayank235-ai/Pizza_sales_analysis/blob/main/pizza_dashboad.png
 
-#📈 Key Insights
-Sales Performance
+**📈 Key Insights**
+ 
+*Sales Performance*
 Total Revenue: $817,860
 Highest sales on Fridays and Saturdays
-Peak ordering hours:
+
+*Peak ordering hours*:
 Lunch: 12 PM – 1 PM
 Evening: 5 PM – 8 PM
-Product Performance
+
+*Product Performance*
 Most ordered size: Large
 Top-selling pizza: Classic Deluxe Pizza
 Highest revenue category: Classic Pizzas
-Low-Performing Products
+
+*Low-Performing Products*
 Least ordered pizzas:
 Brie Carre
 Mediterranean
 
-#📁 Repository Structure
+**📁 Repository Structure**
 Pizza_Sales_Analysis
 ├── pizza_sales.csv
 ├── queries.sql
 ├── pizza_sales_dashboard.png
 └── README.md
 
-##🚀 Conclusion
+#🚀 Conclusion#
 
 This project demonstrates practical experience in SQL querying, data cleaning, KPI analysis, and dashboard development. It reflects a complete, real-world data analytics workflow — converting raw data into clear insights that support business decision-making.
 
