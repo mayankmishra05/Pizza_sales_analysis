@@ -1,131 +1,118 @@
-🍕📊 Pizza Sales Analytics – Insights from Data to Dashboard
+# 🍕📊 Pizza Sales Analytics  
+## From Raw Data to Business Insights & Interactive Dashboard
 
-This project dives into pizza sales performance using a combination of PostgreSQL for SQL-based analysis and Excel for dashboard visualization.
-The goal is to understand customer buying habits, identify top-performing pizzas, and draw meaningful insights that can guide business strategies.
-
-
-📂 Dataset Overview
-
-The dataset contains detailed information on pizza orders — including order IDs, pizza names, quantities, prices, order dates, and times.
-You can find the dataset in this repository once uploaded.
-
-
-
-🧰 Tools & Technologies
-
-PostgreSQL – Database management and data analysis
-
-Microsoft Excel – Visualization and dashboard creation
-
-Power Query – Data import and transformation
-
-Pivot Tables & Charts – Summary metrics and KPIs
-
-
+This project analyzes pizza sales performance using **PostgreSQL for SQL-based data analysis** and **Microsoft Excel for dashboard visualization**. The goal is to understand customer purchasing behavior, identify top- and low-performing pizzas, and deliver actionable insights that support business decision-making.
 
 ---
 
-🔄 Project Workflow
-
-🪜 Step 1: Data Import
-
-The raw dataset was loaded into PostgreSQL using its import tool.
-A pizza_sales table was created with the following key columns:
-
-order_id, pizza_id, pizza_name_id, quantity, order_date, order_time, unit_price, total_price
-
-
-🧹 Step 2: Data Cleaning
-
-Removed blank rows and invalid entries
-
-Corrected date and time formats
-
-Standardized category and size values for consistency
-
-
-💻 Step 3: SQL Analysis
-
-Once the data was cleaned, SQL queries were used to extract important metrics such as:
-
-Total Revenue
-
-SELECT SUM(total_price) AS total_revenue FROM pizza_sales;
-
-Average Order Value
-
-SELECT SUM(total_price) / COUNT(DISTINCT order_id) AS avg_order_value FROM pizza_sales;
-
-Most Popular Pizzas
-
-SELECT pizza_name_id, SUM(quantity) AS total_sold
-FROM pizza_sales
-GROUP BY pizza_name_id
-ORDER BY total_sold DESC
-LIMIT 5;
-
-In addition to these, time-based and category-wise breakdowns were also explored to identify sales trends.
-
-📊 Step 4: Excel Dashboard
-
-The query outputs were exported to Excel to build an interactive dashboard using:
-
-Pivot Tables for data summarization
-
-Charts (line, bar, donut) for trend visualization
-
-Slicers for filtering by category, size, and date
-
-
+## 🎯 Project Objectives
+- Analyze overall revenue and sales performance  
+- Identify best-selling and underperforming pizzas  
+- Understand customer ordering behavior by day and time  
+- Build an interactive Excel dashboard for stakeholders  
 
 ---
 
-📈 Major Insights
+## 📂 Dataset Overview
+The dataset contains detailed pizza order information, including:
+- Order ID  
+- Pizza name, category, and size  
+- Quantity sold  
+- Unit price and total price  
+- Order date and time  
 
-💰 Sales Highlights
+📁 The dataset is included in this repository.
 
-Total revenue: $817,860
+---
 
-Peak sales on Fridays and Saturdays
+## 🧰 Tools & Technologies
+- **PostgreSQL** – Database management and SQL analysis  
+- **Microsoft Excel** – Dashboard creation and visualization  
+- **Power Query** – Data import and transformation  
+- **Pivot Tables & Charts** – KPI reporting and insights  
 
-High order volume during lunch (12–1 PM) and evening (5–8 PM)
+---
 
+## 🔄 Project Workflow
 
-🍕 Product Insights
+### 🪜 Step 1: Data Import
+The raw dataset was imported into **PostgreSQL**, and a table named `pizza_sales` was created with the following columns: order_id, pizza_id, pizza_name_id, quantity,
+order_date, order_time, unit_price, total_price
+
+---
+
+### Step 2: Data Cleaning
+Data cleaning was performed to ensure accuracy and consistency:
+- Removed blank rows and invalid records  
+- Corrected date and time formats  
+- Standardized pizza categories and sizes  
+- Ensured consistency in quantity and pricing fields  
+
+---
+
+### Step 3: SQL Data Analysis
+SQL queries were used to extract key metrics and uncover trends
+
+📊 Dashboard Creation (Excel)
+
+The results from SQL analysis were exported to Microsoft Excel to build an interactive dashboard using:
+
+KPI cards (Total Revenue, Total Orders, Average Order Value)
+
+Line charts for time-based sales trends
+
+Bar and donut charts for category and size analysis
+
+Slicers for filtering by date, category, and size
+
+Dashboard Preview:
+https://github.com/mayank235-ai/Pizza_sales_analysis/blob/main/pizza_dashboad.png
+
+📈 Key Insights
+
+Sales Performance
+
+Total Revenue: $817,860
+
+Highest sales on Fridays and Saturdays
+
+Peak ordering hours:
+
+Lunch: 12 PM – 1 PM
+
+Evening: 5 PM – 8 PM
+
+Product Performance
 
 Most ordered size: Large
 
 Top-selling pizza: Classic Deluxe Pizza
 
-Top revenue category: Classic pizzas
+Highest revenue category: Classic Pizzas
 
+Low-Performing Products
 
-⚠️ Low Performers
+Least ordered pizzas:
 
-Least ordered pizzas: Brie Carre and Mediterranean
+Brie Carre
 
-
-
----
-
-🧾 Dashboard Sneak Peek
-
-An Excel dashboard was designed to visually track KPIs such as revenue, order trends, and category performance.
-https://github.com/mayank235-ai/Pizza_sales_analysis/blob/main/pizza_dashboad.png
-
-
+Mediterranean
 
 📁 Repository Structure
-
-Pizza_Sales_Analysis 
-
+Pizza_Sales_Analysis
 ├── pizza_sales.csv
-
 ├── queries.sql
-
 ├── pizza_sales_dashboard.png
+└── README.md
 
-├── README.md
+🚀 Conclusion
+
+This project demonstrates practical experience in SQL querying, data cleaning, KPI analysis, and dashboard development. It reflects a complete, real-world data analytics workflow — converting raw data into clear insights that support business decision-making.
+
+
+
+
+
 
 
 
